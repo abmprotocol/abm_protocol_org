@@ -1,3 +1,3 @@
-# UniswapV2
+# AbmProtocol
 
-`yarn && yarn start`
+`npm install && npm start`
