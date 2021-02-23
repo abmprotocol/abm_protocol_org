@@ -6,7 +6,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Menu from './menu'
 
-import Uni from '../images/uni.inline.svg'
+import ABM_BROWN from '../images/abm_brown.inline.svg'
+import ABM_WHITE from '../images/abm_white.inline.svg'
 import MenuIcon from '../images/menu.inline.svg'
 import CloseIcon from '../images/x.inline.svg'
 
@@ -147,7 +148,23 @@ const MenuToggle = styled.button`
   }
 `
 
-const StyledUni = styled(Uni)`
+const StyledBrown = styled(ABM_BROWN)`
+  path {
+    fill: ${({ theme }) => theme.textColor};
+  }
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  margin-right: 0.35rem;
+  margin-top: -4px;
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+  :hover {
+    transform: rotate(-10deg);
+  }
+`
+
+const StyledWhite = styled(ABM_WHITE)`
   path {
     fill: ${({ theme }) => theme.textColor};
   }
@@ -209,7 +226,6 @@ const Header = props => {
           menulinks {
             name
             sublinks {
-              description
               name
               link
             }
@@ -256,17 +272,17 @@ const Header = props => {
             textDecoration: `none`
           }}
         >
-          <StyledUni />
-          <HeaderText>Uniswap</HeaderText>
+          { darkMode ? <StyledWhite/> : <StyledBrown/> }
+          <HeaderText>ABMProtocol</HeaderText>
         </StyledHomeLink>
       </StyledNavTitleWrapper>
       <MenuToggle ref={button} open={isMenuOpen} onClick={() => updateIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <StyledCloseIcon /> : <StyledMenuIcon />}
       </MenuToggle>
       <StyledNav ref={node} open={isMenuOpen}>
-        {data.site.siteMetadata.menulinks.map(item => {
+        {/* {data.site.siteMetadata.menulinks.map(item => {
           return <Menu key={item.name} data={item} />
-        })}
+        })} */}
         <HideSmall>
           <StyledButton type="button" onClick={toggleDarkMode}>
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -276,13 +292,13 @@ const Header = props => {
         {props.path !== undefined && (
           <StyledTradeLink
             style={{
-              background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
+              background: `linear-gradient(128.17deg, #0c4339 -14.78%, #8bd0c2 110.05%)`,
               color: 'white'
             }}
             target="_blank"
             href="https://app.uniswap.org/"
           >
-            Use Uniswap
+            Use ABMProtocol
           </StyledTradeLink>
         )}
       </StyledNav>

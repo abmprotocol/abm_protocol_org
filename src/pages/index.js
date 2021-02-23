@@ -299,14 +299,14 @@ const IndexPage = props => {
           <StyledItemRow>
             <Button
               style={{
-                background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
+                background: `linear-gradient(128.17deg, #0c4339 -14.78%, #8bd0c2 110.05%)`,
                 color: 'white',
                 fontSize: '20px'
               }}
               target="_blank"
               href="https://app.uniswap.org/"
             >
-              Use Uniswap
+              Use ABMProtocol
             </Button>
             <Button
               outlined
@@ -330,9 +330,9 @@ const IndexPage = props => {
             </Button>
           </StyledItemRow>
         </StyledTitle>
-        <ProtocolData />
+        {/* <ProtocolData /> */}
 
-        <DeveloperSection data={data} props={props} />
+        {/* <DeveloperSection data={data} props={props} /> */}
         <ProductsSection data={data} props={props} />
       </StyledBody>
       <BG />
@@ -371,7 +371,7 @@ const DeveloperSection = props => {
     <>
       <StyledSectionTitle>A growing protocol ecosystem.</StyledSectionTitle>
       <StyledBodySubText>
-        The Uniswap protocol empowers developers, liquidity providers and traders to participate in a financial
+        The ABM protocol empowers developers, liquidity providers and traders to participate in a financial
         marketplace that is open and accessible to all.
       </StyledBodySubText>
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
@@ -382,7 +382,7 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
-      <StyledSectionTitle>A suite of tools for a tokenized world.</StyledSectionTitle>
+      {/* <StyledSectionTitle>A suite of tools for a tokenized world.</StyledSectionTitle>
       <StyledBodySubText>
         We build state of the art open source apps to access the Uniswap protocol and contribute to the world of
         decentralized finance.
@@ -403,9 +403,9 @@ const ProductsSection = props => {
         <StyledExternalLink href={'https://sybil.org'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.sybil.childImageSharp.fluid} />
         </StyledExternalLink>
-      </StyledItemRow>
+      </StyledItemRow> */}
 
-      <StyledSectionTitle>Superpowers for DEFI developers.</StyledSectionTitle>
+      {/* <StyledSectionTitle>Superpowers for DEFI developers.</StyledSectionTitle>
       <StyledBodySubText>
         Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
         <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your project
@@ -413,7 +413,7 @@ const ProductsSection = props => {
       </StyledBodySubText>
       <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
         <Wizard />
-      </StyledSectionFlex>
+      </StyledSectionFlex> */}
 
       <StyledSectionTitle>A global community.</StyledSectionTitle>
       <StyledBodySubText>
@@ -421,18 +421,18 @@ const ProductsSection = props => {
         of the Uniswap protocol.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://discord.gg/FCfyBSbCU5'} target="_blank">
+        <StyledExternalLink href={'https://discord.gg/uMRVj3pW'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://twitter.com/Uniswap'} target="_blank">
+        <StyledExternalLink href={'https://twitter.com/abmprotocol'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://gov.uniswap.org/'} target="_blank">
+        {/* <StyledExternalLink href={'https://gov.uniswap.org/'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discourse.childImageSharp.fluid} />
         </StyledExternalLink>
         <StyledExternalLink href={'https://www.reddit.com/r/Uniswap'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
-        </StyledExternalLink>
+        </StyledExternalLink> */}
       </StyledItemRow>
     </>
   )

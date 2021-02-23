@@ -115,7 +115,6 @@ const Footer = () => {
           menulinks {
             name
             sublinks {
-              description
               name
               link
             }
@@ -141,7 +140,7 @@ const Footer = () => {
       <StyledSection>
         <StyledFooterSection>
           <EmailSection />
-          <p>© 2020 Uniswap</p>
+          <p>© 2021 ABMProtocol</p>
         </StyledFooterSection>
       </StyledSection>
     </StyledFooter>

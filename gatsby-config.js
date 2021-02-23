@@ -6,9 +6,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Uniswap`,
-    description: `Automated liquidity protocol on Ethereum`,
-    author: `@Uniswap`,
+    title: `ABMProtocol`,
+    description: `Anti-Bear Market Protocol`,
+    author: `@ABMProtocol`,
     menulinks: menu,
     siteUrl: `https://uniswap.org`,
     repository: `https://github.com/Uniswap/uniswap-org`,
@@ -140,7 +140,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/fav.ico` // This path is relative to the root of the site.
+        icon: `src/images/fav.png` // This path is relative to the root of the site.
       }
     },
     {
