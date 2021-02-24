@@ -248,20 +248,20 @@ const Header = props => {
     return () => (document.body.style.overflow = originalStyle)
   }, [isMenuOpen]) // Empty array ensures effect is only run on mount and unmount
 
-  useEffect(() => {
-    const handleClickOutside = e => {
-      if (node.current.contains(e.target) || button.current.contains(e.target)) {
-        return
-      }
-      updateIsMenuOpen(false)
-    }
+  // useEffect(() => {
+  //   const handleClickOutside = e => {
+  //     if (node.current.contains(e.target) || button.current.contains(e.target)) {
+  //       return
+  //     }
+  //     updateIsMenuOpen(false)
+  //   }
 
-    document.addEventListener('mousedown', handleClickOutside)
+  //   document.addEventListener('mousedown', handleClickOutside)
 
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [isMenuOpen, updateIsMenuOpen, matches])
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside)
+  //   }
+  // }, [isMenuOpen, updateIsMenuOpen, matches])
 
   return (
     <StyledHeader open={isMenuOpen} showBG={headerBG}>
@@ -276,9 +276,9 @@ const Header = props => {
           <HeaderText>ABMProtocol</HeaderText>
         </StyledHomeLink>
       </StyledNavTitleWrapper>
-      <MenuToggle ref={button} open={isMenuOpen} onClick={() => updateIsMenuOpen(!isMenuOpen)}>
+      {/* <MenuToggle ref={button} open={isMenuOpen} onClick={() => updateIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <StyledCloseIcon /> : <StyledMenuIcon />}
-      </MenuToggle>
+      </MenuToggle> */}
       <StyledNav ref={node} open={isMenuOpen}>
         {/* {data.site.siteMetadata.menulinks.map(item => {
           return <Menu key={item.name} data={item} />
