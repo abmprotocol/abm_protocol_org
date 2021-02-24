@@ -90,26 +90,26 @@ const StyledPageTitle = styled.div`
 const Docs = props => {
   const data = useStaticQuery(graphql`
     {
-      allMdx(filter: { fileAbsolutePath: { regex: "/faq/" } }, sort: {}) {
-        edges {
-          node {
-            headings {
-              value
-              depth
-            }
-            frontmatter {
-              title
-            }
-            fields {
-              slug
-              subDir
-              rawSlug
-              parentDir
-            }
-            id
-          }
-        }
-      }
+      // allMdx(filter: { fileAbsolutePath: { regex: "/faq/" } }, sort: {}) {
+      //   edges {
+      //     node {
+      //       headings {
+      //         value
+      //         depth
+      //       }
+      //       frontmatter {
+      //         title
+      //       }
+      //       fields {
+      //         slug
+      //         subDir
+      //         rawSlug
+      //         parentDir
+      //       }
+      //       id
+      //     }
+      //   }
+      // }
     }
   `)
 
@@ -118,7 +118,7 @@ const Docs = props => {
       <BG />
       <SEO title={props.pageContext.frontmatter.title} path={props.location.pathname} />
       <GlobalStyle />
-      {data.allMdx.edges
+      {/* {data.allMdx.edges
         .filter(({ node }) => {
           return node.fields.slug === props.path
         })
@@ -138,7 +138,7 @@ const Docs = props => {
               description={node.excerpt}
             />
           )
-        })}
+        })} */}
       <StyledDocs id="docs-header">
         <span>
           <StyledPageTitle>
