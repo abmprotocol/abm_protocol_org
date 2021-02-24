@@ -39,7 +39,7 @@ const Layout = ({ path, children, nofooter, isDocs }) => {
         <Header path={path} siteTitle={data.site.siteMetadata.title} />
       )}
       <Mdx>{children}</Mdx>
-      {nofooter ? null : <Footer />}
+      {/* {nofooter ? null : <Footer />} */}
     </StyledThemeProvider>
   )
 }

@@ -291,9 +291,9 @@ const IndexPage = props => {
       />
       <StyledBody>
         <StyledTitle>
-          <StyledBodyTitle>Decentralized Trading Protocol</StyledBodyTitle>
+          <StyledBodyTitle>Anti Bear Market Protocol</StyledBodyTitle>
           <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
-            Guaranteed liquidity for millions of users and hundreds of Ethereum applications.
+            Eradicator of bear market
           </StyledBodySubTitle>
 
           <StyledItemRow>
@@ -306,19 +306,19 @@ const IndexPage = props => {
               target="_blank"
               href="https://app.uniswap.org/"
             >
-              Use ABMProtocol
+              About ABMProtocol
             </Button>
-            <Button
+            {/* <Button
               outlined
-              to="/docs"
-              as={Link}
+              // to="/docs"
+              // as={Link}
               style={{
                 fontSize: '20px'
               }}
             >
-              Documentation
-            </Button>
-            <Button
+              Coming soon
+            </Button> */}
+            {/* <Button
               outlined
               to="/faq"
               as={Link}
@@ -327,7 +327,7 @@ const IndexPage = props => {
               }}
             >
               FAQ
-            </Button>
+            </Button> */}
           </StyledItemRow>
         </StyledTitle>
         {/* <ProtocolData /> */}
@@ -415,10 +415,10 @@ const ProductsSection = props => {
         <Wizard />
       </StyledSectionFlex> */}
 
-      <StyledSectionTitle>A global community.</StyledSectionTitle>
+      <StyledSectionTitle>Our community.</StyledSectionTitle>
       <StyledBodySubText>
-        Learn more about Uniswap, chat with the team, others in the community, and have your say in shaping the future
-        of the Uniswap protocol.
+        Learn more about ABM protocol, chat with the team, others in the community, and have your say in shaping the future
+        of the ABM protocol.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'https://discord.gg/uMRVj3pW'} target="_blank">
