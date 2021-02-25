@@ -296,7 +296,7 @@ const Header = props => {
               color: 'white'
             }}
             target="_blank"
-            // href="https://app.uniswap.org/"
+            href="https://abmprotocol.medium.com/abm-anti-bear-market-protocol-dc3856fb4b20"
           >
             Coming Soon
           </StyledTradeLink>

@@ -304,7 +304,7 @@ const IndexPage = props => {
                 fontSize: '20px'
               }}
               target="_blank"
-              href="https://app.uniswap.org/"
+              href="https://abmprotocol.medium.com/abm-anti-bear-market-protocol-dc3856fb4b20"
             >
               About ABMProtocol
             </Button>
