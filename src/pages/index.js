@@ -421,7 +421,7 @@ const ProductsSection = props => {
         of the ABM protocol.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://discord.gg/uMRVj3pW'} target="_blank">
+        <StyledExternalLink href={'https://discord.gg/Q5Jb6FnkAR'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
         </StyledExternalLink>
         <StyledExternalLink href={'https://twitter.com/abmprotocol'} target="_blank">
